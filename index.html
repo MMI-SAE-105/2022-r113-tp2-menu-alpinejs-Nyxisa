@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr"x-data="{menuIsOpen : false}":class="{noscroll:menuIsOpen,}">
-</html>
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -31,14 +30,14 @@
   <body>
     <!-- https://emmet.io/ -->
     <!-- header>h1{Test de menu} -->
-    <header>
-      <button aria-controls="mainNav"
+    <header x-data="{menuIsOpen : false}":class="{noscroll:menuIsOpen,}">
+    <button aria-controls="mainNav"
       @click="menuIsOpen= ! menuIsOpen"
       class="header_menuBtn">
       <aria-expanded="true"menu> Menu
       </button>
       <h1>Test de menu</h1>
-      <nav 
+      <nav
       id="mainNav" 
       x-show="menuIsOpen"x-transition.duration.800ms
       class="menu">
@@ -48,6 +47,30 @@
           <li><a href="#">item3</a></li>
         </ul>
       </nav>
+      <dl x-data="{LoremIsOpen : false}">
+        <dt aria-controls="LoremIsOpen" @click="LoremIsOpen= ! LoremIsOpen">
+          Lorem.
+        </dt>  
+         <div id="LoremIsOpen" x-show="LoremIsOpen" x-transition:enter.duration.500ms x-transition:leave.duration.400ms>  
+          <dd>Lorem ipsum dolor sit amet.</dd>
+         </div>
+      </dl>
+      <dl x-data="{CommodiIsOpen : false}">
+        <dt aria-controls="CommodiIsOpen" @click="CommodiIsOpen= ! CommodiIsOpen">
+          Commodi?
+        </dt>
+         <div id="CommodiIsOpen" x-show="CommodiIsOpen" x-transition:enter.duration.500ms x-transition:leave.duration.400ms>
+          <dd>Earum, mollitia cumque. Nobis, tenetur.</dd>
+         </div>
+      </dl>
+      <dl x-data="{QuiIsOpen : false}">
+        <dt aria-controls="QuiIsOpen" @click="QuiIsOpen= ! QuiIsOpen">
+          Qui!
+        </dt>
+         <div id="QuiIsOpen" x-show="QuiIsOpen" x-transition:enter.duration.500ms x-transition:leave.duration.400ms>
+          <dd>Dignissimos, facilis atque? Assumenda, aliquid.</dd>
+         </div>
+      </dl>
     </header>
     <!-- h2>lorem2^p>lorem -->
     <h2>Lorem, ipsum.</h2>
