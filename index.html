@@ -6,26 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accueil - Chats et chiens</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
-    <style>
-      .menu {
-        position:fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height:100vh;
-        background: #fff;;
-        display: grid;
-        place-content: center;
-      }
-      .header_menuBtn {
-        position:relative;
-        z-index: 10;
-      }
-      .noscroll,
-      .noscroll body {
-        overflow: hidden;
-      }
-    </style>
+    <link rel="stylesheet" href="src/css/styles.css">
   </head>
   <body>
     <!-- https://emmet.io/ -->
@@ -42,10 +23,11 @@
       x-show="menuIsOpen"x-transition.duration.800ms
       class="menu">
         <ul>
-          <li><a href="/cats/index.html">Les chats</a> 
+          <li class="icone1"><a href="/cats/index.html">Les chats</a> 
+            <ul>
            <li><a href="/cats/chat-1.html">Chat 1</a></li>
            <li><a href="/cats/chat-2.html">Chat 2</a></li>
-          </li>
+          </ul>
         </ul>
         <ul>
           <li><a href="/dogs/index.html">Les chiens</a> 
@@ -54,6 +36,7 @@
           </li>
         </ul>
       </nav>
+      
       <dl x-data="{LoremIsOpen : false}">
         <dt aria-controls="LoremIsOpen" @click="LoremIsOpen= ! LoremIsOpen">
           Lorem.
