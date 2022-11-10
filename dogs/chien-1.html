@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accueil - Chats et chiens</title>
+    <title>Chien 1 - Chats et chiens</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
     <style>
       .menu {
@@ -36,24 +36,25 @@
       class="header_menuBtn">
       <aria-expanded="true"menu> Menu
       </button>
-      <h1>Accueil</h1>
+      <h1>Chien 1</h1>
       <nav
       id="mainNav" 
       x-show="menuIsOpen"x-transition.duration.800ms
       class="menu">
         <ul>
           <li><a href="./cats/index.html">Les chats</a> 
-           <li><a href="./cats/chat-1.html">Chat 1</a></li>
-           <li><a href="./cats/chat-2.html">Chat 2</a></li>
+           <li><a href="../cats/chat-1.html">Chat 1</a></li>
+           <li><a href="../cats/chat-2.html">Chat 2</a></li>
           </li>
         </ul>
         <ul>
           <li><a href="./dogs/index.html">Les chiens</a> 
-           <li><a href="./dogs/chien-1.html">Chien 1</a></li>
-           <li><a href="./dogs/chien-2.html">Chien 2</a></li>
+           <li><a href="./chien-1.html">Chien 1</a></li>
+           <li><a href="./chien-2.html">Chien 2</a></li>
           </li>
         </ul>
       </nav>
+      <img class="media media--fullwidth" src="../public/img/dogs/640px-German_shepherd_wanting_to_play.jpg" alt="Bergé allemand couché avec une balle">
       <dl x-data="{LoremIsOpen : false}">
         <dt aria-controls="LoremIsOpen" @click="LoremIsOpen= ! LoremIsOpen">
           Lorem.
