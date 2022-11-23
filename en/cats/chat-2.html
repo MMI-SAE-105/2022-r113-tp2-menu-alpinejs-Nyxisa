@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accueil - Chats et chiens</title>
+    <title>Cat 2 - Cats & dogs</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
-    <link rel="stylesheet" href="/src/css/styles.css">
+    <link rel="stylesheet" href="../../src/css/styles.css">
   </head>
   <body>
     <!-- https://emmet.io/ -->
@@ -17,27 +17,25 @@
       class="header_menuBtn">
       <aria-expanded="true"menu> Menu
       </button>
-      <a href="/en/index.html">EN</a>
-      <h1>Accueil</h1>
+      <h1>Cat 2</h1>
       <nav
       id="mainNav" 
       x-show="menuIsOpen"x-transition.duration.800ms
       class="menu">
         <ul>
-          <li class="icone1"><a href="/cats/index.html">Les chats</a> 
-            <ul>
-           <li><a href="/cats/chat-1.html">Chat 1</a></li>
-           <li><a href="/cats/chat-2.html">Chat 2</a></li>
-          </ul>
+          <li><a href="/en/cats/chats.html">Cats</a> 
+           <li><a href="/en/cats/chat-1.html">Cat 1</a></li>
+           <li><a href="/en/cats/chat-2.html">Cat 2</a></li>
+          </li>
         </ul>
         <ul>
-          <li><a href="/dogs/index.html">Les chiens</a> 
-           <li><a href="/dogs/chien-1.html">Chien 1</a></li>
-           <li><a href="/dogs/chien-2.html">Chien 2</a></li>
+          <li><a href="/en/dogs/chiens.html">Dogs</a> 
+           <li><a href="/en/dogs/chien-1.html">Dog 1</a></li>
+           <li><a href="/en/dogs/chien-2.html">Dog 2</a></li>
           </li>
         </ul>
       </nav>
-      
+      <img class="media media--fullwidth" src="../public/img/cats/Cautious_Tabby_Red_Cat.jpg" alt="Chat roux couché">
       <dl x-data="{LoremIsOpen : false}">
         <dt aria-controls="LoremIsOpen" @click="LoremIsOpen= ! LoremIsOpen">
           Lorem.
