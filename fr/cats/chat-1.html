@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chat 1 - Chats et chiens</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
-    <link rel="stylesheet" href="../src/css/styles.css">
+    <link rel="stylesheet" href="../../src/css/styles.css">
   </head>
   <body>
     <!-- https://emmet.io/ -->
@@ -23,9 +23,9 @@
       x-show="menuIsOpen"x-transition.duration.800ms
       class="menu">
         <ul>
-          <li><a href="./index.html">Les chats</a> 
-           <li><a href="./chat-1.html">Chat 1</a></li>
-           <li><a href="./chat-2.html">Chat 2</a></li>
+          <li><a href="index.html">Les chats</a> 
+           <li><a href="chat-1.html">Chat 1</a></li>
+           <li><a href="chat-2.html">Chat 2</a></li>
           </li>
         </ul>
         <ul>
@@ -35,7 +35,7 @@
           </li>
         </ul>
       </nav>
-      <img class="media media--fullwidth" src="../public/img/cats/Cat_yawning_in_park.jpg" alt="Chat qui baille dans un parc">
+      <img class="media media--fullwidth" src="../../public/img/cats/Cat_yawning_in_park.jpg" alt="Chat qui baille dans un parc">
       <dl x-data="{LoremIsOpen : false}">
         <dt aria-controls="LoremIsOpen" @click="LoremIsOpen= ! LoremIsOpen">
           Lorem.
