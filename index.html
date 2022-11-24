@@ -21,58 +21,5 @@
       <h1>Accueil</h1>
       <a href="/en/index.html">Home in english</a>
       <a href="/fr/index.html">Accueil en français</a>
-
-      <nav
-      id="mainNav" 
-      x-show="menuIsOpen"x-transition.duration.800ms
-      class="menu">
-        <ul>
-          <li class="icone1"><a href="/fr/cats/chats.html">Les chats</a> 
-            <ul>
-           <li><a href="/fr/cats/chat-1.html">Chat 1</a></li>
-           <li><a href="/fr/cats/chat-2.html">Chat 2</a></li>
-          </ul>
-        </ul>
-        <ul>
-          <li><a href="/fr/dogs/chiens.html">Les chiens</a> 
-           <li><a href="/fr/dogs/chien-1.html">Chien 1</a></li>
-           <li><a href="/fr/dogs/chien-2.html">Chien 2</a></li>
-          </li>
-        </ul>
-      </nav>
-      
-      <dl x-data="{LoremIsOpen : false}">
-        <dt aria-controls="LoremIsOpen" @click="LoremIsOpen= ! LoremIsOpen">
-          Lorem.
-        </dt>  
-         <div id="LoremIsOpen" x-show="LoremIsOpen" x-transition:enter.duration.500ms x-transition:leave.duration.400ms>  
-          <dd>Lorem ipsum dolor sit amet.</dd>
-         </div>
-      </dl>
-      <dl x-data="{CommodiIsOpen : false}">
-        <dt aria-controls="CommodiIsOpen" @click="CommodiIsOpen= ! CommodiIsOpen">
-          Commodi?
-        </dt>
-         <div id="CommodiIsOpen" x-show="CommodiIsOpen" x-transition:enter.duration.500ms x-transition:leave.duration.400ms>
-          <dd>Earum, mollitia cumque. Nobis, tenetur.</dd>
-         </div>
-      </dl>
-      <dl x-data="{QuiIsOpen : false}">
-        <dt aria-controls="QuiIsOpen" @click="QuiIsOpen= ! QuiIsOpen">
-          Qui!
-        </dt>
-         <div id="QuiIsOpen" x-show="QuiIsOpen" x-transition:enter.duration.500ms x-transition:leave.duration.400ms>
-          <dd>Dignissimos, facilis atque? Assumenda, aliquid.</dd>
-         </div>
-      </dl>
-    </header>
-    <!-- h2>lorem2^p>lorem -->
-    <h2>Lorem, ipsum.</h2>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
-      mollitia adipisci alias error laboriosam numquam incidunt magni eum eos
-      nemo aliquid pariatur quam voluptates animi laudantium, aperiam
-      consectetur nobis enim.
-    </p>
   </body>
 </html>
